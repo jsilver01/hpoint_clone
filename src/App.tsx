@@ -14,7 +14,13 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  return <div>{isSplash ? <SplashScreen /> : <Home />}</div>;
+  return (
+    <div className="container">
+      <div className="phone_frame">
+        {isSplash ? <SplashScreen /> : <Home />}
+      </div>
+    </div>
+  );
 }
 
 export default App;
