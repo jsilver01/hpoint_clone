@@ -10,6 +10,10 @@ const NavigationBar = () => {
     navigate("/");
   };
 
+  const handleGoLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <div className="bottom_nav_container">
       <div className="bottom_nav">
@@ -34,7 +38,7 @@ const NavigationBar = () => {
         </div>
       </div>
 
-      <div className="floating_button">
+      <div className="floating_button" onClick={handleGoLogin}>
         <p>MY.H</p>
       </div>
     </div>

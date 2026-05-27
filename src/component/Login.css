@@ -1,0 +1,138 @@
+.login_container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_container {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+}
+
+.header_container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back_caret_area {
+  /* margin-left: 5%; */
+  margin-right: 10%;
+}
+
+.hamburger_area {
+  margin-left: 10%;
+}
+
+.logo_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.logo_area img {
+  width: 50%;
+}
+
+.login_card {
+  margin-bottom: 3%;
+}
+.kakao_login {
+  width: 100%;
+  background-color: #ffe500;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  padding: 2% 6%;
+  box-sizing: border-box;
+}
+
+.login_btn {
+  width: 100%;
+  background-color: white;
+  border-radius: 999px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  padding: 2% 6%;
+  box-sizing: border-box;
+}
+
+.icon_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_area {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.check_btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.login_option_row {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.auto_login_area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auto_login_area span {
+  font-size: 14px;
+}
+
+.signup_btn {
+  border: none;
+  background: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.footer_container {
+  margin-top: auto;
+  margin-bottom: 8%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 2%;
+}
