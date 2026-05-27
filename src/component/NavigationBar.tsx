@@ -1,13 +1,20 @@
 import "./NavigationBar.css";
 import HomeIcon from "../img/home-page.png";
 import CultureIcon from "../img/teamwork.png";
+import { useNavigate } from "react-router-dom";
 
 const NavigationBar = () => {
+  const navigate = useNavigate();
+
+  const handleGoHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="bottom_nav_container">
       <div className="bottom_nav">
         <div className="nav_section">
-          <div className="nav_item">
+          <div className="nav_item" onClick={handleGoHome}>
             <div className="icon">
               <img className="icon_img" src={HomeIcon} />
             </div>
