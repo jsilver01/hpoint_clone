@@ -1,5 +1,5 @@
 import "./SplashScreen.css";
-import splashLogo from "../img/splash_logo.png";
+import splashLogo from "../../img/splash_logo.png";
 
 const SplashScreen = () => {
   return (

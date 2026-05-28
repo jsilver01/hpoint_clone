@@ -1,6 +1,6 @@
 import "./NavigationBar.css";
-import HomeIcon from "../img/home-page.png";
-import CultureIcon from "../img/teamwork.png";
+import HomeIcon from "../../img/home-page.png";
+import CultureIcon from "../../img/teamwork.png";
 import { useNavigate } from "react-router-dom";
 
 const NavigationBar = () => {

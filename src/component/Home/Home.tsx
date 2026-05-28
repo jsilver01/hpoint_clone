@@ -1,10 +1,10 @@
 import "./Home.css";
 import NavigationBar from "../BottomNav/NavigationBar";
-import CodeIcon from "../img/code.png";
-import PointIcon from "../img/dollar-circle.png";
-import Notification from "../img/notification.png";
-import Hamburger from "../img/Hamburger_MD.png";
-import MainAD1 from "../img/main_ad1.png";
+import CodeIcon from "../../img/code.png";
+import PointIcon from "../../img/dollar-circle.png";
+import Notification from "../../img/notification.png";
+import Hamburger from "../../img/Hamburger_MD.png";
+import MainAD1 from "../../img/main_ad1.png";
 import { useNavigate } from "react-router-dom";
 
 // 아이콘 섹션 아이템 데이터

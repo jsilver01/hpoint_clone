@@ -1,16 +1,16 @@
 import "./Login.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import LogoImg from "../img/hpoint_logo.png";
-import KakaoIcon from "../img/Chat_Circle.png";
-import PhoneIcon from "../img/phone.png";
-import BioIcon from "../img/biometric.png";
-import AppleIcon from "../img/apple.png";
-import PersonIcon from "../img/idpw.png";
-import checkedIcon from "../img/circle-checked.png";
-import unCheckedIcon from "../img/circle-unchecked.png";
-import BackCaret from "../img/back_caret.png";
-import Hamburger from "../img/Hamburger_MD.png";
+import LogoImg from "../../img/hpoint_logo.png";
+import KakaoIcon from "../../img/Chat_Circle.png";
+import PhoneIcon from "../../img/phone.png";
+import BioIcon from "../../img/biometric.png";
+import AppleIcon from "../../img/apple.png";
+import PersonIcon from "../../img/idpw.png";
+import checkedIcon from "../../img/circle-checked.png";
+import unCheckedIcon from "../../img/circle-unchecked.png";
+import BackCaret from "../../img/back_caret.png";
+import Hamburger from "../../img/Hamburger_MD.png";
 
 import Header from "../Header/Header";
 
