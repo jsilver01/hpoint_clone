@@ -25,7 +25,11 @@ const bannerCards = [
   },
 ];
 
-const Home = () => {
+type homeProps = {
+  onOpenDrawer: () => void;
+};
+
+const Home = ({ onOpenDrawer }: homeProps) => {
   const navigate = useNavigate();
   const handleGoLogin = () => {
     navigate("/login");
@@ -55,7 +59,12 @@ const Home = () => {
               src={Notification}
               className="header_icon"
             />
-            <img alt="hamburger" src={Hamburger} className="header_icon" />
+            <img
+              alt="hamburger"
+              src={Hamburger}
+              className="header_icon"
+              onClick={onOpenDrawer}
+            />
           </div>
         </div>
 

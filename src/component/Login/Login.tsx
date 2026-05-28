@@ -14,7 +14,11 @@ import Hamburger from "../../img/Hamburger_MD.png";
 
 import Header from "../Header/Header";
 
-const Login = () => {
+type loginProps = {
+  onOpenDrawer: () => void;
+};
+
+const Login = ({ onOpenDrawer }: loginProps) => {
   const navigate = useNavigate();
   const [isAutoLogin, setIsAutoLogin] = useState(false);
 
@@ -41,6 +45,7 @@ const Login = () => {
           leftChild={BackCaret}
           rightChild={Hamburger}
           handleGoHome={handleGoHome}
+          handleOpenDrawer={onOpenDrawer}
         />
 
         <div className="logo_area">

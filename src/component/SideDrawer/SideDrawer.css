@@ -1,0 +1,236 @@
+.drawer_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 200;
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+.drawer_overlay.open {
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+}
+
+.drawer_panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 82%;
+  max-width: 360px;
+  height: 100%;
+  background: #ffffff;
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%); /* 처음엔 화면 밖 */
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  /* box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12); */
+}
+
+.drawer_panel.open {
+  transform: translateX(0); /* 열리면 안으로 */
+}
+
+.drawer_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.drawer_logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.5px;
+}
+
+.drawer_header_actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon_btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.icon_btn:hover {
+  background: #f5f5f5;
+}
+
+.close_btn {
+  font-size: 18px;
+  color: #333;
+}
+
+.drawer_login_banner {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.login_link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5b3ee8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login_text {
+  font-size: 14px;
+  color: #444;
+}
+
+.drawer_scroll_content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 0 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu_section {
+  padding: 20px 20px 8px;
+}
+
+.section_title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.section_dot {
+  color: #5b3ee8;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.menu_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 4px;
+}
+
+.menu_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.15s;
+}
+
+.menu_item:hover {
+  background: #f5f2ff;
+}
+
+.menu_item:active {
+  background: #ede8ff;
+}
+
+.menu_icon_area {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background: #f5f5f7;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ececec;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+
+.menu_item:hover .menu_icon_area {
+  background: #ede8ff;
+  border-color: #c4b5fd;
+}
+
+.menu_icon_text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5b3ee8;
+}
+
+/* N 뱃지 */
+.item_badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  background: #5b3ee8;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #fff;
+}
+
+.menu_label {
+  font-size: 11px;
+  color: #333;
+  text-align: center;
+  word-break: keep-all;
+  line-height: 1.3;
+}
+
+.drawer_footer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #5b3ee8;
+  padding: 0;
+  height: 56px;
+}
+
+.footer_link {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  letter-spacing: -0.2px;
+}
+
+.footer_link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.footer_link:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}

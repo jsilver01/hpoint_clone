@@ -4,9 +4,11 @@ import "./App.css";
 import SplashScreen from "./component/Splash/SplashScreen";
 import Home from "./component/Home/Home";
 import Login from "./component/Login/Login";
+import SideDrawer from "./component/SideDrawer/SideDrawer";
 
 function App() {
   const [isSplash, setIsSplash] = useState(true);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,9 +31,20 @@ function App() {
           <div className="container">
             <div className="phone_frame">
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
+                <Route
+                  path="/"
+                  element={<Home onOpenDrawer={() => setDrawerOpen(true)} />}
+                />
+                <Route
+                  path="/login"
+                  element={<Login onOpenDrawer={() => setDrawerOpen(true)} />}
+                />
               </Routes>
+
+              <SideDrawer
+                isOpen={drawerOpen}
+                onClose={() => setDrawerOpen(false)}
+              />
             </div>
           </div>
         </BrowserRouter>

@@ -5,6 +5,7 @@ type HeaderProps = {
   middleText?: string;
   rightChild: string;
   handleGoHome: () => void;
+  handleOpenDrawer: () => void;
 };
 
 const Header = ({
@@ -12,6 +13,7 @@ const Header = ({
   middleText,
   rightChild,
   handleGoHome,
+  handleOpenDrawer,
 }: HeaderProps) => {
   return (
     <div className="header_container">
@@ -22,7 +24,7 @@ const Header = ({
       <div className="middle_text_area">{middleText}</div>
 
       <div className="hamburger_area">
-        <img alt="hamburger" src={rightChild} />
+        <img alt="hamburger" src={rightChild} onClick={handleOpenDrawer} />
       </div>
     </div>
   );
