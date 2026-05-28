@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import SplashScreen from "./component/SplashScreen";
-import Home from "./component/Home";
-import Login from "./component/Login";
+import SplashScreen from "./component/Splash/SplashScreen";
+import Home from "./component/Home/Home";
+import Login from "./component/Login/Login";
 
 function App() {
   const [isSplash, setIsSplash] = useState(true);

@@ -11,8 +11,9 @@
 }
 
 .header_container {
-  width: 100%;
-
+  /* width: 100%; */
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,11 +21,11 @@
 
 .back_caret_area {
   /* margin-left: 5%; */
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 
 .hamburger_area {
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 .logo_area {

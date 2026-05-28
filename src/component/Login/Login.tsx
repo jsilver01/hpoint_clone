@@ -12,7 +12,7 @@ import unCheckedIcon from "../img/circle-unchecked.png";
 import BackCaret from "../img/back_caret.png";
 import Hamburger from "../img/Hamburger_MD.png";
 
-import Header from "../component/Header";
+import Header from "../Header/Header";
 
 const Login = () => {
   const navigate = useNavigate();
